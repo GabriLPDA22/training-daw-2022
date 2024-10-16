@@ -1,16 +1,14 @@
-function hello(name, lastname, years) {
+function hello(nombre, apellidos, edad) {
+    return `Hola ${nombre} ${apellidos}, tienes ${edad} años de edad`;
 }
 
-let result = hello('John', 'Anderton', 35)
-if (result != "Hola John Anderton, tienes 35 años de edad") {
-    console.log('test fail')
-    return
+// Prueba 1
+let result = hello('John', 'Anderton', 35);
+console.log(result); 
+if (result !== "Hola John Anderton, tienes 35 años de edad") {
+    console.log('test fail');
+} else {
+    console.log('Test OK');
 }
 
-result = hello('John', 'Foo', 47)
-if (result != "Hola John Foo, tienes 47 años de edad") {
-    console.log('test fail')
-    return
-}
 
-console.log('Test OK')

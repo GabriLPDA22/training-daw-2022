@@ -1,3 +1,5 @@
-x = 10
+"use strict";
 
-console.log('el valor de X ' + x)
+
+let x = 10;
+console.log('valor de x es ' + x);
