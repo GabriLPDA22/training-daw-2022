@@ -1,8 +1,20 @@
 function printMultiplicationTables() {
+    let result = ''; // Variable para almacenar las tablas de multiplicar en formato de texto
+    
+    // Bucle externo: recorre cada fila
+    for (let i = 1; i <= 10; i++) {
+        // Bucle interno: recorre cada columna
+        for (let j = 1; j <= 10; j++) {
+            result += (i * j).toString().padStart(4, ' '); // Multiplica y formatea con espacios
+        }
+        result += '\n'; // Salto de línea al final de cada fila
+    }
 
+    console.log(result); // Imprime todas las tablas de multiplicar
 }
 
-printMultiplicationTables()
+printMultiplicationTables();
+
 // expected output
 //     1   2   3   ...
 // 1   1   2   3   ...
